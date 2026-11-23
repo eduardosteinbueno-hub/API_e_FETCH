@@ -1,0 +1,83 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background-color: #243b63;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+button {
+    background-color: #315da8;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #24477f;
+}
+
+button:disabled {
+    background-color: gray;
+}
+
+input {
+    padding: 12px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#mensagem {
+    color: #315da8;
+}
+
+#lista-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.cartao {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.cartao h2 {
+    color: #243b63;
+    font-size: 20px;
+}
+
+.cartao p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.cartao span {
+    color: #315da8;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    input {
+        margin: 10px 0;
+        width: 90%;
+    }
+}
